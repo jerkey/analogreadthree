@@ -1,0 +1,3 @@
+kill $(pgrep -f readserialline.py)
+LATESTLOGFILENAME=$(cd /root/data/ ; ls | sort -n | tail -n1)
+date >> $LATESTLOGFILENAME # append the present date and time to the log
